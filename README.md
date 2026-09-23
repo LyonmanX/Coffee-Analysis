@@ -75,7 +75,7 @@ The dataset contains 43 columns, including:
 
 ## How to Run
 1. Install required packages
-2. Place `coffee_ratings.csv` in a `data/` folder
+2. Place `coffee_ratings.csv` in the same folder as the notebook file.
 3. Open the notebook
 4. Run all cells in order
 
