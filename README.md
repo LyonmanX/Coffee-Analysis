@@ -6,11 +6,11 @@ the best coffees apart, and how much of a coffee's score can be predicted from w
 
 | File | What it is |
 |---|---|
-| `Coffee_Analysis_v2.ipynb` | Full analysis: cleaning, statistical tests, models |
-| `Coffee_Analysis_v2.pptx` | 12-slide presentation of the findings (with speaker notes) |
+| `Coffee_Analysis.ipynb` | Full analysis: cleaning, statistical tests, models |
+| `Coffee_Analysis.pptx` | 12-slide presentation of the findings (with speaker notes) |
 | `figures/` | Every chart from the notebook as PNG |
 | `coffee_ratings.csv` | The dataset |
-| `Group_9_ClassProject_Final_Edit.ipynb`, `Group 9 Coffee Analysis Presentation.pptx` | Original v1 class submission |
+| `archive/v1/` | Original class submission (notebook and presentation), kept for comparison |
 
 ---
 
@@ -63,11 +63,12 @@ An OLS regression (statsmodels) gives effect sizes with p-values.
 ## How to run
 ```bash
 pip install -r requirements.txt
-jupyter notebook Coffee_Analysis_v2.ipynb
+jupyter notebook Coffee_Analysis.ipynb
 ```
 Keep `coffee_ratings.csv` in the same folder as the notebook and run all cells. Charts are saved to `figures/`.
 
-## v2 changes
+## Changes from the original class submission
+The original version is in [`archive/v1/`](archive/v1/). This revision:
 - Added significance tests, linear regression and a Random Forest model
 - Fixed data errors (0-point review, altitude typos, zero moisture, grading-date parsing)
 - Replaced the within-top-10% correlation (biased by range restriction) with a top-vs-rest comparison
