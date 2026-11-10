@@ -10,7 +10,24 @@ the best coffees apart, and how much of a coffee's score can be predicted from w
 | `Coffee_Analysis.pptx` | 12-slide presentation of the findings (with speaker notes) |
 | `figures/` | Every chart from the notebook as PNG |
 | `coffee_ratings.csv` | The dataset |
+| `tableau/` | Interactive Tableau dashboard, its prepared data, and a step-by-step build guide |
 | `archive/v1/` | Original class submission (notebook and presentation), kept for comparison |
+
+---
+
+## Interactive Tableau dashboard
+A one-page dashboard of the findings: KPI tiles, a world map of average scores, the traits that separate the top 10%,
+score by farm altitude, and a country ranking. Clicking a country on the map filters the other charts.
+
+| File | What it is |
+|---|---|
+| `tableau/What brews a winning cup.twb` | The Tableau workbook (open in Tableau Desktop or the free Tableau Public app) |
+| `tableau/prepare_tableau_data.py` | Applies the notebook's cleaning and writes the two CSVs the dashboard uses |
+| `tableau/coffee_reviews_tableau.csv` | One row per coffee, cleaned, with a top-10% flag and map-ready country names |
+| `tableau/coffee_sensory_long.csv` | The 10 tasting scores per coffee in long format, for the top-10% comparison |
+| `tableau/DASHBOARD_GUIDE.md` | Click-by-click guide to rebuilding the dashboard |
+
+If Tableau can't find the data when you open the workbook, point it to the CSVs in the `tableau/` folder.
 
 ---
 
